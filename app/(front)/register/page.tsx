@@ -3,15 +3,7 @@ import { Metadata } from 'next';
 import Form from './Form';
 
 export const metadata: Metadata = {
-  title: 'Register',
+  title: 'Đăng Ký',
 };
 
-const RegisterPage = async () => {
-  return (
-    <div>
-      <Form />
-    </div>
-  );
-};
-
-export default RegisterPage;
+export default Form;

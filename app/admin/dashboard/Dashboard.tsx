@@ -122,33 +122,33 @@ const Dashboard = () => {
     <div>
       <div className='stats stats-vertical my-4 inline-grid shadow md:stats-horizontal md:flex'>
         <div className='stat'>
-          <div className='stat-title'>Sales</div>
+          <div className='stat-title'>Doanh Thu</div>
           <div className='stat-value text-primary'>
             ${formatNumber(summary.ordersPrice)}
           </div>
           <div className='stat-desc'>
-            <Link href='/admin/orders'>View sales</Link>
+            <Link href='/admin/orders'>Xem doanh thu</Link>
           </div>
         </div>
         <div className='stat'>
-          <div className='stat-title'> Orders</div>
+          <div className='stat-title'>Đơn Hàng</div>
           <div className='stat-value text-primary'>{summary.ordersCount}</div>
           <div className='stat-desc'>
-            <Link href='/admin/orders'>View orders</Link>
+            <Link href='/admin/orders'>Xem đơn hàng</Link>
           </div>
         </div>
         <div className='stat'>
-          <div className='stat-title'>Products</div>
+          <div className='stat-title'>Sản Phẩm</div>
           <div className='stat-value text-primary'>{summary.productsCount}</div>
           <div className='stat-desc'>
-            <Link href='/admin/products'>View products</Link>
+            <Link href='/admin/products'>Xem sản phẩm</Link>
           </div>
         </div>
         <div className='stat'>
-          <div className='stat-title'>Users</div>
+          <div className='stat-title'>Người Dùng</div>
           <div className='stat-value text-primary'>{summary.usersCount}</div>
           <div className='stat-desc'>
-            <Link href='/admin/users'>View users</Link>
+            <Link href='/admin/users'>Xem người dùng</Link>
           </div>
         </div>
       </div>

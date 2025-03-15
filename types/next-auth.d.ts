@@ -5,11 +5,13 @@ declare module 'next-auth' {
     user: {
       _id?: string | null;
       isAdmin?: boolean;
+      avatar?: string;
     } & DefaultSession['user'];
   }
 
   export interface User extends DefaultUser {
     _id?: string;
     isAdmin?: boolean;
+    avatar?: string;
   }
 }

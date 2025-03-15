@@ -5,6 +5,7 @@ export type User = {
   name: string;
   email: string;
   isAdmin: boolean;
+  avatar?: string;
 };
 
 const UserSchema = new mongoose.Schema(
@@ -23,6 +24,7 @@ const UserSchema = new mongoose.Schema(
       required: true,
     },
     isAdmin: { type: Boolean, required: true, default: false },
+    avatar: { type: String, default: '/images/default-avatar.png' },
   },
   { timestamps: true },
 );

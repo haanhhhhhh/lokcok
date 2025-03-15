@@ -3,9 +3,10 @@ import AdminLayout from '@/components/admin/AdminLayout';
 import Users from './Users';
 
 export const metadata = {
-  title: 'Admin Users',
+  title: 'Quản Lý Người Dùng',
 };
-const AdminUsersPage = () => {
+
+const UsersPage = () => {
   return (
     <AdminLayout activeItem='users'>
       <Users />
@@ -13,4 +14,4 @@ const AdminUsersPage = () => {
   );
 };
 
-export default AdminUsersPage;
+export default UsersPage;

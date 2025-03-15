@@ -7,36 +7,36 @@ const Icons = () => {
         <Truck width={48} height={48} strokeWidth={1} />
         <div className='flex flex-col gap-2'>
           <p>
-            <strong>Free Shipping</strong>
+            <strong>Miễn Phí Vận Chuyển</strong>
           </p>
-          <p>Order above $200</p>
+          <p>Cho đơn hàng trên 5 triệu</p>
         </div>
       </div>
       <div className='flex flex-col justify-center gap-4 bg-base-300 px-4 py-8 md:px-12'>
         <Wallet width={48} height={48} strokeWidth={1} />
         <div className='flex flex-col gap-2'>
           <p>
-            <strong>Money-back</strong>
+            <strong>Hoàn Tiền</strong>
           </p>
-          <p>30 days guarantee0</p>
+          <p>Đảm bảo trong 30 ngày</p>
         </div>
       </div>
       <div className='flex flex-col justify-center gap-4 bg-base-300 px-4 py-8 md:px-12'>
         <LockKeyhole width={48} height={48} strokeWidth={1} />
         <div className='flex flex-col gap-2'>
           <p>
-            <strong>Secure Payments</strong>
+            <strong>Thanh Toán An Toàn</strong>
           </p>
-          <p>Secured by Stripe</p>
+          <p>Bảo mật bởi Stripe</p>
         </div>
       </div>
       <div className='flex flex-col justify-center gap-4 bg-base-300 px-4 py-8 md:px-12'>
         <Phone width={48} height={48} strokeWidth={1} />
         <div className='flex flex-col gap-2'>
           <p>
-            <strong>24/7 Support</strong>
+            <strong>Hỗ Trợ 24/7</strong>
           </p>
-          <p>Phone and Email support</p>
+          <p>Qua điện thoại và email</p>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ export const PUT = auth(async (req) => {
     return Response.json({ message: 'Not authenticated' }, { status: 401 });
   }
   const { user } = req.auth;
-  const { name, email, password } = await req.json();
+  const { name, email, password, avatar } = await req.json();
   await dbConnect();
   try {
     const dbUser = await UserModel.findById(user._id);
@@ -26,6 +26,9 @@ export const PUT = auth(async (req) => {
     dbUser.password = password
       ? await bcrypt.hash(password, 5)
       : dbUser.password;
+    if (avatar) {
+      dbUser.avatar = avatar;
+    }
     await dbUser.save();
     return Response.json({ message: 'User has been updated' });
   } catch (err: any) {
